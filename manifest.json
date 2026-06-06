@@ -709,7 +709,147 @@
     "detail": 6,
     "resolution": 2048,
     "url": "https://kafeg.github.io/rocktools/#pipeline=eyJ2ZXJzaW9uIjoxLCJzb3VyY2VUeXBlIjoiY3JlYXRlIiwiYmFzZU1lc2giOiJpY29zYWhlZHJvbjAub2JqIiwiY3JlYXRlUGFyYW1zIjp7Im5vZGVzIjo0OSwiZ2F1c3NpYW5Ob2RlcyI6MjYsIndhbGtOb2RlcyI6MjYsInJvdW5kbmVzcyI6MC4zNywic2VlZCI6ODQzODA2fSwic3RlcHMiOlt7InRvb2wiOiJyb2NrZGV0YWlsIiwicGFyYW1zIjp7ImRlcHRoIjo2LCJzdWJkaXZpc2lvbk1vZGUiOiItNCIsImludGVycG9sYXRpb24iOiItc3BsIiwiYmFzZVBlcnR1cmJhdGlvbiI6MC4wOSwiYmFzZUV4cG9uZW50IjowLjUsIm5vcm1hbFBlcnR1cmJhdGlvbiI6MC4wODcsIm5vcm1hbEV4cG9uZW50IjowLjUsIm5vcm1hbEJpYXMiOjAsInNwaGVyZUZvcmNlIjpmYWxzZSwiZ2F1c3NpYW5SYW5kb20iOnRydWUsImNsYW1wRWRnZXMiOmZhbHNlLCJzZWVkIjo4NDM4MDZ9fSx7InRvb2wiOiJyb2Nrc21vb3RoIiwicGFyYW1zIjp7InBhc3NlcyI6NCwidGVuc2lvbiI6MCwibm9ybWFscyI6dHJ1ZSwiZ3JvdyI6MH19LHsidG9vbCI6Im1lc2g6Zmlzc3VyZXMiLCJwYXJhbXMiOnsiY291bnQiOjQsImRlcHRoIjowLjAyLCJ3aWR0aCI6MC4wMiwibGVuZ3RoIjowLjUxLCJicmFuY2hpbmciOjAuMjksImphZ2dlZG5lc3MiOjAuMjYsImF2b2lkT3ZlcmxhcCI6dHJ1ZSwic2VlZCI6ODQzODA2fX0seyJ0b29sIjoibWVzaDpjcmF0ZXJzIiwicGFyYW1zIjp7ImNvdW50IjoxNCwibWluU2l6ZSI6MC4wMzMsIm1heFNpemUiOjAuMjgsImRlcHRoUmF0aW8iOjAuMiwicmltSGVpZ2h0IjowLjA0NSwicmltV2lkdGgiOjAuMjQsImVqZWN0YUV4dGVudCI6MC41LCJkZWdyYWRhdGlvbiI6MC41OSwic2l6ZUV4cG9uZW50IjoyLjA4LCJhdm9pZE92ZXJsYXAiOnRydWUsInNwYWNpbmciOjAuODEsInNlZWQiOjg0MzgwNn19LHsidG9vbCI6Im1lc2g6Ym91bGRlcnMiLCJwYXJhbXMiOnsiY291bnQiOjIxLCJtaW5TaXplIjowLjAyLCJtYXhTaXplIjowLjA1NiwiaGVpZ2h0IjowLjYxLCJyb3VnaG5lc3MiOjAuNDcsInNtb290aGluZyI6MSwiYXZvaWRPdmVybGFwIjp0cnVlLCJzZWVkIjo4NDM4MDZ9fSx7InRvb2wiOiJtZXNoOnJpZGdlcyIsInBhcmFtcyI6eyJjb3VudCI6NCwiaGVpZ2h0IjowLjAyNSwid2lkdGgiOjAuMDc4LCJsZW5ndGgiOjAuNywiaXJyZWd1bGFyaXR5IjowLjM0LCJtb2RlIjoicmlkZ2UiLCJhdm9pZE92ZXJsYXAiOmZhbHNlLCJzZWVkIjo4NDM4MDZ9fSx7InRvb2wiOiJmeDptYXRlcmlhbCIsInBhcmFtcyI6eyJiYXNlQ29sb3IiOiIjNjg1YjUzIiwidGV4dHVyZSI6ImFjZ19yb2NrX2JsYWNrX2NhdmUiLCJhcHBseVRpbnQiOnRydWUsInJvdWdobmVzcyI6MC44LCJtZXRhbG5lc3MiOjAuMDcxLCJjb2xvclZhcmlhdGlvbiI6MC4xNiwiY29sb3JWYXJpYXRpb25TY2FsZSI6My41OH19LHsidG9vbCI6ImZ4OmR1c3QiLCJwYXJhbXMiOnsiZHVzdEFtb3VudCI6MC4xMiwiZHVzdENvbG9yIjoiIzUzNTM0ZiJ9fSx7InRvb2wiOiJmeDpmZWF0dXJlcyIsInBhcmFtcyI6eyJmZWF0dXJlSW50ZW5zaXR5IjowLjQ5LCJjcmF0ZXJTaGFkaW5nIjoxLCJjcmF0ZXJUaW50IjoiIzQyMzIyYyIsImJvdWxkZXJTaGFkaW5nIjoxLCJib3VsZGVyVGludCI6IiM4Zjg2NmIiLCJyaWRnZVNoYWRpbmciOjEsInJpZGdlVGludCI6IiM4YzdmNmQiLCJmaXNzdXJlU2hhZGluZyI6MSwiZmlzc3VyZVRpbnQiOiIjNTUzZjRmIiwibGF5ZXJTaGFkaW5nIjoxLCJsYXllclRpbnQiOiIjOTA3NzY4Iiwibm9ybWFsU3RyZW5ndGgiOjF9fSx7InRvb2wiOiJmeDphbyIsInBhcmFtcyI6eyJhb1N0cmVuZ3RoIjowLjMzLCJhb1JhZGl1cyI6MC41fX0seyJ0b29sIjoiZng6d2VhdGhlcmluZyIsInBhcmFtcyI6eyJ3ZWF0aGVyQW1vdW50IjowLjI3fX1dfQ==",
-    "generatedAt": "2026-05-23"
+    "generatedAt": "2026-05-23",
+    "terrain": {
+      "variants": [
+        {
+          "seed": 2443746791,
+          "params": {
+            "footprint": 36.51,
+            "resolution": 1024,
+            "detailBoost": 3.05,
+            "erosion": 0.44,
+            "mountainAmount": 0.68,
+            "mountainScale": 1.74,
+            "mountainCoverage": 0.38,
+            "foldSharpness": 0.77,
+            "craterDensity": 1.5,
+            "fissureDensity": 0,
+            "ridgeDensity": 0,
+            "rockDensity": 3.71
+          }
+        },
+        {
+          "seed": 88007434,
+          "params": {
+            "footprint": 27.04,
+            "resolution": 948,
+            "detailBoost": 2.2,
+            "erosion": 0.36,
+            "mountainAmount": 0.77,
+            "mountainScale": 1.3,
+            "mountainCoverage": 0.38,
+            "foldSharpness": 0.71,
+            "craterDensity": 1.34,
+            "fissureDensity": 0,
+            "ridgeDensity": 0,
+            "rockDensity": 1
+          }
+        },
+        {
+          "seed": 680351185,
+          "params": {
+            "footprint": 40.84,
+            "resolution": 1024,
+            "detailBoost": 3.15,
+            "erosion": 0.41,
+            "mountainAmount": 1.81,
+            "mountainScale": 1.44,
+            "mountainCoverage": 0.64,
+            "foldSharpness": 0.66,
+            "craterDensity": 1.49,
+            "fissureDensity": 0.11,
+            "ridgeDensity": 0,
+            "rockDensity": 3.07
+          }
+        },
+        {
+          "seed": 4065941511,
+          "params": {
+            "footprint": 40.58,
+            "resolution": 1024,
+            "detailBoost": 2.16,
+            "erosion": 0.36,
+            "mountainAmount": 0.85,
+            "mountainScale": 1.25,
+            "mountainCoverage": 0.27,
+            "foldSharpness": 0.43,
+            "craterDensity": 1.28,
+            "fissureDensity": 0,
+            "ridgeDensity": 0.075,
+            "rockDensity": 3.07
+          }
+        },
+        {
+          "seed": 2171521010,
+          "params": {
+            "footprint": 20.6,
+            "resolution": 783,
+            "detailBoost": 2.22,
+            "erosion": 0.32,
+            "mountainAmount": 1.8,
+            "mountainScale": 0.76,
+            "mountainCoverage": 0.64,
+            "foldSharpness": 0.63,
+            "craterDensity": 1.78,
+            "fissureDensity": 0,
+            "ridgeDensity": 0,
+            "rockDensity": 2.12
+          }
+        },
+        {
+          "seed": 795120109,
+          "params": {
+            "footprint": 41.74,
+            "resolution": 1024,
+            "detailBoost": 3.79,
+            "erosion": 0.53,
+            "mountainAmount": 0.65,
+            "mountainScale": 1.58,
+            "mountainCoverage": 0.21,
+            "foldSharpness": 0.38,
+            "craterDensity": 2.2,
+            "fissureDensity": 0.058,
+            "ridgeDensity": 0.13,
+            "rockDensity": 2.01
+          }
+        },
+        {
+          "seed": 1867910675,
+          "params": {
+            "footprint": 57.17,
+            "resolution": 1024,
+            "detailBoost": 3.41,
+            "erosion": 0.56,
+            "mountainAmount": 0.84,
+            "mountainScale": 1.14,
+            "mountainCoverage": 0.28,
+            "foldSharpness": 0.72,
+            "craterDensity": 1.81,
+            "fissureDensity": 0.16,
+            "ridgeDensity": 0,
+            "rockDensity": 3.27
+          }
+        },
+        {
+          "seed": 1136505664,
+          "params": {
+            "footprint": 25.38,
+            "resolution": 906,
+            "detailBoost": 2.54,
+            "erosion": 0.3,
+            "mountainAmount": 0.86,
+            "mountainScale": 1.53,
+            "mountainCoverage": 0.33,
+            "foldSharpness": 0.52,
+            "craterDensity": 1.63,
+            "fissureDensity": 0.18,
+            "ridgeDensity": 0.29,
+            "rockDensity": 3.89
+          }
+        }
+      ]
+    }
   },
   "callisto": {
     "preset": "dwarf",

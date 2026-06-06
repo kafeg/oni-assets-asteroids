@@ -1,0 +1,605 @@
+{
+  "bodyId": "bennu",
+  "shareUrl": "https://kafeg.github.io/rocktools/#pipeline=eyJ2ZXJzaW9uIjoxLCJzb3VyY2VUeXBlIjoiY3JlYXRlIiwiYmFzZU1lc2giOiJpY29zYWhlZHJvbjAub2JqIiwiY3JlYXRlUGFyYW1zIjp7Im5vZGVzIjo0OSwiZ2F1c3NpYW5Ob2RlcyI6MjYsIndhbGtOb2RlcyI6MjYsInJvdW5kbmVzcyI6MC4zNywic2VlZCI6ODQzODA2fSwic3RlcHMiOlt7InRvb2wiOiJyb2NrZGV0YWlsIiwicGFyYW1zIjp7ImRlcHRoIjo2LCJzdWJkaXZpc2lvbk1vZGUiOiItNCIsImludGVycG9sYXRpb24iOiItc3BsIiwiYmFzZVBlcnR1cmJhdGlvbiI6MC4wOSwiYmFzZUV4cG9uZW50IjowLjUsIm5vcm1hbFBlcnR1cmJhdGlvbiI6MC4wODcsIm5vcm1hbEV4cG9uZW50IjowLjUsIm5vcm1hbEJpYXMiOjAsInNwaGVyZUZvcmNlIjpmYWxzZSwiZ2F1c3NpYW5SYW5kb20iOnRydWUsImNsYW1wRWRnZXMiOmZhbHNlLCJzZWVkIjo4NDM4MDZ9fSx7InRvb2wiOiJyb2Nrc21vb3RoIiwicGFyYW1zIjp7InBhc3NlcyI6NCwidGVuc2lvbiI6MCwibm9ybWFscyI6dHJ1ZSwiZ3JvdyI6MH19LHsidG9vbCI6Im1lc2g6Zmlzc3VyZXMiLCJwYXJhbXMiOnsiY291bnQiOjQsImRlcHRoIjowLjAyLCJ3aWR0aCI6MC4wMiwibGVuZ3RoIjowLjUxLCJicmFuY2hpbmciOjAuMjksImphZ2dlZG5lc3MiOjAuMjYsImF2b2lkT3ZlcmxhcCI6dHJ1ZSwic2VlZCI6ODQzODA2fX0seyJ0b29sIjoibWVzaDpjcmF0ZXJzIiwicGFyYW1zIjp7ImNvdW50IjoxNCwibWluU2l6ZSI6MC4wMzMsIm1heFNpemUiOjAuMjgsImRlcHRoUmF0aW8iOjAuMiwicmltSGVpZ2h0IjowLjA0NSwicmltV2lkdGgiOjAuMjQsImVqZWN0YUV4dGVudCI6MC41LCJkZWdyYWRhdGlvbiI6MC41OSwic2l6ZUV4cG9uZW50IjoyLjA4LCJhdm9pZE92ZXJsYXAiOnRydWUsInNwYWNpbmciOjAuODEsInNlZWQiOjg0MzgwNn19LHsidG9vbCI6Im1lc2g6Ym91bGRlcnMiLCJwYXJhbXMiOnsiY291bnQiOjIxLCJtaW5TaXplIjowLjAyLCJtYXhTaXplIjowLjA1NiwiaGVpZ2h0IjowLjYxLCJyb3VnaG5lc3MiOjAuNDcsInNtb290aGluZyI6MSwiYXZvaWRPdmVybGFwIjp0cnVlLCJzZWVkIjo4NDM4MDZ9fSx7InRvb2wiOiJtZXNoOnJpZGdlcyIsInBhcmFtcyI6eyJjb3VudCI6NCwiaGVpZ2h0IjowLjAyNSwid2lkdGgiOjAuMDc4LCJsZW5ndGgiOjAuNywiaXJyZWd1bGFyaXR5IjowLjM0LCJtb2RlIjoicmlkZ2UiLCJhdm9pZE92ZXJsYXAiOmZhbHNlLCJzZWVkIjo4NDM4MDZ9fSx7InRvb2wiOiJmeDptYXRlcmlhbCIsInBhcmFtcyI6eyJiYXNlQ29sb3IiOiIjNjg1YjUzIiwidGV4dHVyZSI6ImFjZ19yb2NrX2JsYWNrX2NhdmUiLCJhcHBseVRpbnQiOnRydWUsInJvdWdobmVzcyI6MC44LCJtZXRhbG5lc3MiOjAuMDcxLCJjb2xvclZhcmlhdGlvbiI6MC4xNiwiY29sb3JWYXJpYXRpb25TY2FsZSI6My41OH19LHsidG9vbCI6ImZ4OmR1c3QiLCJwYXJhbXMiOnsiZHVzdEFtb3VudCI6MC4xMiwiZHVzdENvbG9yIjoiIzUzNTM0ZiJ9fSx7InRvb2wiOiJmeDpmZWF0dXJlcyIsInBhcmFtcyI6eyJmZWF0dXJlSW50ZW5zaXR5IjowLjQ5LCJjcmF0ZXJTaGFkaW5nIjoxLCJjcmF0ZXJUaW50IjoiIzQyMzIyYyIsImJvdWxkZXJTaGFkaW5nIjoxLCJib3VsZGVyVGludCI6IiM4Zjg2NmIiLCJyaWRnZVNoYWRpbmciOjEsInJpZGdlVGludCI6IiM4YzdmNmQiLCJmaXNzdXJlU2hhZGluZyI6MSwiZmlzc3VyZVRpbnQiOiIjNTUzZjRmIiwibGF5ZXJTaGFkaW5nIjoxLCJsYXllclRpbnQiOiIjOTA3NzY4Iiwibm9ybWFsU3RyZW5ndGgiOjF9fSx7InRvb2wiOiJmeDphbyIsInBhcmFtcyI6eyJhb1N0cmVuZ3RoIjowLjMzLCJhb1JhZGl1cyI6MC41fX0seyJ0b29sIjoiZng6d2VhdGhlcmluZyIsInBhcmFtcyI6eyJ3ZWF0aGVyQW1vdW50IjowLjI3fX1dLCJ0ZXJyYWluIjp7InBhcmFtcyI6eyJmb290cHJpbnQiOjQwLCJyZXNvbHV0aW9uIjoxMDI0LCJkZXRhaWxCb29zdCI6NCwiZXJvc2lvbiI6MC4zLCJtb3VudGFpbkFtb3VudCI6MSwibW91bnRhaW5TY2FsZSI6MSwibW91bnRhaW5Db3ZlcmFnZSI6MC40LCJmb2xkU2hhcnBuZXNzIjowLjUsImNyYXRlckRlbnNpdHkiOjIsImZpc3N1cmVEZW5zaXR5IjowLjI1LCJyaWRnZURlbnNpdHkiOjAuMjUsInJvY2tEZW5zaXR5IjoxfSwic3VyZmFjZVNlZWQiOjAsInZhcmlhbnRzIjpbeyJzZWVkIjoyNDQzNzQ2NzkxLCJwYXJhbXMiOnsiZm9vdHByaW50IjozNi41MSwicmVzb2x1dGlvbiI6MTAyNCwiZGV0YWlsQm9vc3QiOjMuMDUsImVyb3Npb24iOjAuNDQsIm1vdW50YWluQW1vdW50IjowLjY4LCJtb3VudGFpblNjYWxlIjoxLjc0LCJtb3VudGFpbkNvdmVyYWdlIjowLjM4LCJmb2xkU2hhcnBuZXNzIjowLjc3LCJjcmF0ZXJEZW5zaXR5IjoxLjUsImZpc3N1cmVEZW5zaXR5IjowLCJyaWRnZURlbnNpdHkiOjAsInJvY2tEZW5zaXR5IjozLjcxfX0seyJzZWVkIjo4ODAwNzQzNCwicGFyYW1zIjp7ImZvb3RwcmludCI6MjcuMDQsInJlc29sdXRpb24iOjk0OCwiZGV0YWlsQm9vc3QiOjIuMiwiZXJvc2lvbiI6MC4zNiwibW91bnRhaW5BbW91bnQiOjAuNzcsIm1vdW50YWluU2NhbGUiOjEuMywibW91bnRhaW5Db3ZlcmFnZSI6MC4zOCwiZm9sZFNoYXJwbmVzcyI6MC43MSwiY3JhdGVyRGVuc2l0eSI6MS4zNCwiZmlzc3VyZURlbnNpdHkiOjAsInJpZGdlRGVuc2l0eSI6MCwicm9ja0RlbnNpdHkiOjF9fSx7InNlZWQiOjY4MDM1MTE4NSwicGFyYW1zIjp7ImZvb3RwcmludCI6NDAuODQsInJlc29sdXRpb24iOjEwMjQsImRldGFpbEJvb3N0IjozLjE1LCJlcm9zaW9uIjowLjQxLCJtb3VudGFpbkFtb3VudCI6MS44MSwibW91bnRhaW5TY2FsZSI6MS40NCwibW91bnRhaW5Db3ZlcmFnZSI6MC42NCwiZm9sZFNoYXJwbmVzcyI6MC42NiwiY3JhdGVyRGVuc2l0eSI6MS40OSwiZmlzc3VyZURlbnNpdHkiOjAuMTEsInJpZGdlRGVuc2l0eSI6MCwicm9ja0RlbnNpdHkiOjMuMDd9fSx7InNlZWQiOjQwNjU5NDE1MTEsInBhcmFtcyI6eyJmb290cHJpbnQiOjQwLjU4LCJyZXNvbHV0aW9uIjoxMDI0LCJkZXRhaWxCb29zdCI6Mi4xNiwiZXJvc2lvbiI6MC4zNiwibW91bnRhaW5BbW91bnQiOjAuODUsIm1vdW50YWluU2NhbGUiOjEuMjUsIm1vdW50YWluQ292ZXJhZ2UiOjAuMjcsImZvbGRTaGFycG5lc3MiOjAuNDMsImNyYXRlckRlbnNpdHkiOjEuMjgsImZpc3N1cmVEZW5zaXR5IjowLCJyaWRnZURlbnNpdHkiOjAuMDc1LCJyb2NrRGVuc2l0eSI6My4wN319LHsic2VlZCI6MjE3MTUyMTAxMCwicGFyYW1zIjp7ImZvb3RwcmludCI6MjAuNiwicmVzb2x1dGlvbiI6NzgzLCJkZXRhaWxCb29zdCI6Mi4yMiwiZXJvc2lvbiI6MC4zMiwibW91bnRhaW5BbW91bnQiOjEuOCwibW91bnRhaW5TY2FsZSI6MC43NiwibW91bnRhaW5Db3ZlcmFnZSI6MC42NCwiZm9sZFNoYXJwbmVzcyI6MC42MywiY3JhdGVyRGVuc2l0eSI6MS43OCwiZmlzc3VyZURlbnNpdHkiOjAsInJpZGdlRGVuc2l0eSI6MCwicm9ja0RlbnNpdHkiOjIuMTJ9fSx7InNlZWQiOjc5NTEyMDEwOSwicGFyYW1zIjp7ImZvb3RwcmludCI6NDEuNzQsInJlc29sdXRpb24iOjEwMjQsImRldGFpbEJvb3N0IjozLjc5LCJlcm9zaW9uIjowLjUzLCJtb3VudGFpbkFtb3VudCI6MC42NSwibW91bnRhaW5TY2FsZSI6MS41OCwibW91bnRhaW5Db3ZlcmFnZSI6MC4yMSwiZm9sZFNoYXJwbmVzcyI6MC4zOCwiY3JhdGVyRGVuc2l0eSI6Mi4yLCJmaXNzdXJlRGVuc2l0eSI6MC4wNTgsInJpZGdlRGVuc2l0eSI6MC4xMywicm9ja0RlbnNpdHkiOjIuMDF9fSx7InNlZWQiOjE4Njc5MTA2NzUsInBhcmFtcyI6eyJmb290cHJpbnQiOjU3LjE3LCJyZXNvbHV0aW9uIjoxMDI0LCJkZXRhaWxCb29zdCI6My40MSwiZXJvc2lvbiI6MC41NiwibW91bnRhaW5BbW91bnQiOjAuODQsIm1vdW50YWluU2NhbGUiOjEuMTQsIm1vdW50YWluQ292ZXJhZ2UiOjAuMjgsImZvbGRTaGFycG5lc3MiOjAuNzIsImNyYXRlckRlbnNpdHkiOjEuODEsImZpc3N1cmVEZW5zaXR5IjowLjE2LCJyaWRnZURlbnNpdHkiOjAsInJvY2tEZW5zaXR5IjozLjI3fX0seyJzZWVkIjoxMTM2NTA1NjY0LCJwYXJhbXMiOnsiZm9vdHByaW50IjoyNS4zOCwicmVzb2x1dGlvbiI6OTA2LCJkZXRhaWxCb29zdCI6Mi41NCwiZXJvc2lvbiI6MC4zLCJtb3VudGFpbkFtb3VudCI6MC44NiwibW91bnRhaW5TY2FsZSI6MS41MywibW91bnRhaW5Db3ZlcmFnZSI6MC4zMywiZm9sZFNoYXJwbmVzcyI6MC41MiwiY3JhdGVyRGVuc2l0eSI6MS42MywiZmlzc3VyZURlbnNpdHkiOjAuMTgsInJpZGdlRGVuc2l0eSI6MC4yOSwicm9ja0RlbnNpdHkiOjMuODl9fV19fQ==",
+  "generatedAt": "2026-06-05",
+  "sites": [
+    {
+      "siteIndex": 0,
+      "siteId": "north_pole",
+      "surfaceSeed": 2443746791,
+      "glb": "site-0.glb",
+      "image": "site-0.jpg",
+      "params": {
+        "footprint": 36.51,
+        "resolution": 1024,
+        "detailBoost": 3.05,
+        "erosion": 0.44,
+        "mountainAmount": 0.68,
+        "mountainScale": 1.74,
+        "mountainCoverage": 0.38,
+        "foldSharpness": 0.77,
+        "craterDensity": 1.5,
+        "fissureDensity": 0,
+        "ridgeDensity": 0,
+        "rockDensity": 3.71
+      },
+      "landingPads": [
+        {
+          "x": -2.0164369501466277,
+          "y": 0.06638075411319733,
+          "z": -15.364178885630498,
+          "radius": 1.4604,
+          "slope": 6.057498239675496e-7
+        },
+        {
+          "x": 8.404794721407624,
+          "y": 0.17122504115104675,
+          "z": 3.7652052785923757,
+          "radius": 1.4604,
+          "slope": 0.0000016326369537411622
+        },
+        {
+          "x": -14.186436950146627,
+          "y": -0.18559549748897552,
+          "z": -10.153563049853371,
+          "radius": 1.4604,
+          "slope": 0.00000697592216847287
+        },
+        {
+          "x": 6.084999999999998,
+          "y": -0.052347972989082336,
+          "z": 10.724589442815248,
+          "radius": 1.4604,
+          "slope": 0.000012877334351846237
+        },
+        {
+          "x": 3.1941788856304996,
+          "y": -0.03614300116896629,
+          "z": 9.546847507331377,
+          "radius": 1.4604,
+          "slope": 0.000015151538417246257
+        },
+        {
+          "x": -4.336231671554252,
+          "y": -0.19289372861385345,
+          "z": -10.153563049853371,
+          "radius": 1.4604,
+          "slope": 0.00001569546499402552
+        },
+        {
+          "x": -18.255,
+          "y": 0.06016276031732559,
+          "z": -13.61541055718475,
+          "radius": 1.4604,
+          "slope": 0.000017732882432675012
+        },
+        {
+          "x": -18.255,
+          "y": 0.05088426172733307,
+          "z": -1.4454105571847513,
+          "radius": 1.4604,
+          "slope": 0.000019282796800190738
+        }
+      ],
+      "stats": {
+        "maxSlope": 0.56335603924614,
+        "flatFraction": 0.9251184463500977,
+        "rockCount": 8508,
+        "vertexCount": 1048576,
+        "triCount": 2093058
+      },
+      "generatedAt": "2026-06-05"
+    },
+    {
+      "siteIndex": 1,
+      "siteId": "south_pole",
+      "surfaceSeed": 88007434,
+      "glb": "site-1.glb",
+      "image": "site-1.jpg",
+      "params": {
+        "footprint": 27.04,
+        "resolution": 948,
+        "detailBoost": 2.2,
+        "erosion": 0.36,
+        "mountainAmount": 0.77,
+        "mountainScale": 1.3,
+        "mountainCoverage": 0.38,
+        "foldSharpness": 0.71,
+        "craterDensity": 1.34,
+        "fissureDensity": 0,
+        "ridgeDensity": 0,
+        "rockDensity": 1
+      },
+      "landingPads": [
+        {
+          "x": -4.068848996832102,
+          "y": 0.0552397295832634,
+          "z": -13.52,
+          "radius": 1.0816,
+          "slope": 0.0015342299424124795
+        }
+      ],
+      "stats": {
+        "maxSlope": 0.48856395283049714,
+        "flatFraction": 0.9742607132047927,
+        "rockCount": 922,
+        "vertexCount": 898704,
+        "triCount": 1793618
+      },
+      "generatedAt": "2026-06-05"
+    },
+    {
+      "siteIndex": 2,
+      "siteId": "equatorial_alpha",
+      "surfaceSeed": 680351185,
+      "glb": "site-2.glb",
+      "image": "site-2.jpg",
+      "params": {
+        "footprint": 40.84,
+        "resolution": 1024,
+        "detailBoost": 3.15,
+        "erosion": 0.41,
+        "mountainAmount": 1.81,
+        "mountainScale": 1.44,
+        "mountainCoverage": 0.64,
+        "foldSharpness": 0.66,
+        "craterDensity": 1.49,
+        "fissureDensity": 0.11,
+        "ridgeDensity": 0,
+        "rockDensity": 3.07
+      },
+      "landingPads": [
+        {
+          "x": -19.781251221896387,
+          "y": -0.11288817226886749,
+          "z": -2.255581622678397,
+          "radius": 1.6336000000000002,
+          "slope": 0.000021157031686591665
+        },
+        {
+          "x": 4.211749755620724,
+          "y": -0.13171035051345825,
+          "z": 6.167917888563049,
+          "radius": 1.6336000000000002,
+          "slope": 0.000022927582981058237
+        },
+        {
+          "x": -11.996500488758553,
+          "y": -0.009459392167627811,
+          "z": 2.934252199413492,
+          "radius": 1.6336000000000002,
+          "slope": 0.00003094505835543604
+        },
+        {
+          "x": -5.529169110459433,
+          "y": 0.10058389604091644,
+          "z": 0.9780840664711624,
+          "radius": 1.6336000000000002,
+          "slope": 0.00003618940053762287
+        },
+        {
+          "x": -17.82508308895406,
+          "y": 0.10865885019302368,
+          "z": 8.762834799608996,
+          "radius": 1.6336000000000002,
+          "slope": 0.000058686280183573025
+        },
+        {
+          "x": -8.762834799608992,
+          "y": 0.011190449818968773,
+          "z": -0.3393352883675462,
+          "radius": 1.6336000000000002,
+          "slope": 0.00006220960174030399
+        },
+        {
+          "x": -12.635249266862171,
+          "y": 0.9573612809181213,
+          "z": 9.40158357771261,
+          "radius": 1.6336000000000002,
+          "slope": 0.00006409116563299566
+        },
+        {
+          "x": 5.529169110459433,
+          "y": -0.09842672199010849,
+          "z": 20.42,
+          "radius": 1.6336000000000002,
+          "slope": 0.00006695275134571688
+        }
+      ],
+      "stats": {
+        "maxSlope": 0.7452937715801109,
+        "flatFraction": 0.6682519912719727,
+        "rockCount": 8036,
+        "vertexCount": 1048576,
+        "triCount": 2093058
+      },
+      "generatedAt": "2026-06-05"
+    },
+    {
+      "siteIndex": 3,
+      "siteId": "equatorial_beta",
+      "surfaceSeed": 4065941511,
+      "glb": "site-3.glb",
+      "image": "site-3.jpg",
+      "params": {
+        "footprint": 40.58,
+        "resolution": 1024,
+        "detailBoost": 2.16,
+        "erosion": 0.36,
+        "mountainAmount": 0.85,
+        "mountainScale": 1.25,
+        "mountainCoverage": 0.27,
+        "foldSharpness": 0.43,
+        "craterDensity": 1.28,
+        "fissureDensity": 0,
+        "ridgeDensity": 0.075,
+        "rockDensity": 3.07
+      },
+      "landingPads": [
+        {
+          "x": -8.70704789833822,
+          "y": -0.1430123895406723,
+          "z": -12.554809384164223,
+          "radius": 1.6232,
+          "slope": 3.0761075264784665e-7
+        },
+        {
+          "x": -17.07692082111437,
+          "y": 0.21998260915279388,
+          "z": 1.6065395894428138,
+          "radius": 1.6232,
+          "slope": 0.000005964736184416175
+        },
+        {
+          "x": -4.8196187683284455,
+          "y": -0.2196321189403534,
+          "z": -20.29,
+          "radius": 1.6232,
+          "slope": 0.000006603922136361184
+        },
+        {
+          "x": -12.554809384164223,
+          "y": 0.06085286661982536,
+          "z": -11.285444770283478,
+          "radius": 1.6232,
+          "slope": 0.000009621198486353677
+        },
+        {
+          "x": 8.707047898338223,
+          "y": 0.1885591596364975,
+          "z": 15.133206256109482,
+          "radius": 1.6232,
+          "slope": 0.000010632524067855087
+        },
+        {
+          "x": -18.34628543499511,
+          "y": -0.18589259684085846,
+          "z": -8.032697947214075,
+          "radius": 1.6232,
+          "slope": 0.00001198388130752015
+        },
+        {
+          "x": -2.2412218963831867,
+          "y": -0.025270799174904823,
+          "z": 19.65531769305963,
+          "radius": 1.6232,
+          "slope": 0.000015261622087980875
+        },
+        {
+          "x": 15.767888563049853,
+          "y": 0.15904979407787323,
+          "z": -9.341730205278592,
+          "radius": 1.6232,
+          "slope": 0.00001999794194462723
+        }
+      ],
+      "stats": {
+        "maxSlope": 0.5624915561904915,
+        "flatFraction": 0.9783315658569336,
+        "rockCount": 6287,
+        "vertexCount": 1048576,
+        "triCount": 2093058
+      },
+      "generatedAt": "2026-06-05"
+    },
+    {
+      "siteIndex": 4,
+      "siteId": "equatorial_gamma",
+      "surfaceSeed": 2171521010,
+      "glb": "site-4.glb",
+      "image": "site-4.jpg",
+      "params": {
+        "footprint": 20.6,
+        "resolution": 783,
+        "detailBoost": 2.22,
+        "erosion": 0.32,
+        "mountainAmount": 1.8,
+        "mountainScale": 0.76,
+        "mountainCoverage": 0.64,
+        "foldSharpness": 0.63,
+        "craterDensity": 1.78,
+        "fissureDensity": 0,
+        "ridgeDensity": 0,
+        "rockDensity": 2.12
+      },
+      "landingPads": [
+        {
+          "x": -10.3,
+          "y": -0.10996243357658386,
+          "z": -10.3,
+          "radius": 0.8240000000000001,
+          "slope": 0.0010571758349591232
+        }
+      ],
+      "stats": {
+        "maxSlope": 0.5648907789368931,
+        "flatFraction": 0.8494786238213375,
+        "rockCount": 1083,
+        "vertexCount": 613089,
+        "triCount": 1223048
+      },
+      "generatedAt": "2026-06-05"
+    },
+    {
+      "siteIndex": 5,
+      "siteId": "midlat_alpha",
+      "surfaceSeed": 795120109,
+      "glb": "site-5.glb",
+      "image": "site-5.jpg",
+      "params": {
+        "footprint": 41.74,
+        "resolution": 1024,
+        "detailBoost": 3.79,
+        "erosion": 0.53,
+        "mountainAmount": 0.65,
+        "mountainScale": 1.58,
+        "mountainCoverage": 0.21,
+        "foldSharpness": 0.38,
+        "craterDensity": 2.2,
+        "fissureDensity": 0.058,
+        "ridgeDensity": 0.13,
+        "rockDensity": 2.01
+      },
+      "landingPads": [
+        {
+          "x": 4.3045650048875865,
+          "y": 0.11929357796907425,
+          "z": 2.9989149560117325,
+          "radius": 1.6696000000000002,
+          "slope": 0.000006384069642151324
+        },
+        {
+          "x": -2.99891495601173,
+          "y": 0.1848839819431305,
+          "z": 3.6517399804496593,
+          "radius": 1.6696000000000002,
+          "slope": 0.000007374418205197131
+        },
+        {
+          "x": -20.87,
+          "y": 0.007502175867557526,
+          "z": -19.564349951124147,
+          "radius": 1.6696000000000002,
+          "slope": 0.000008045592717276229
+        },
+        {
+          "x": 13.566520039100686,
+          "y": 0.0923687070608139,
+          "z": 16.218621700879766,
+          "radius": 1.6696000000000002,
+          "slope": 0.000012603144572298497
+        },
+        {
+          "x": 20.87,
+          "y": -0.09984413534402847,
+          "z": 15.565796676441838,
+          "radius": 1.6696000000000002,
+          "slope": 0.000018558389318967805
+        },
+        {
+          "x": -9.608768328445748,
+          "y": -0.17913509905338287,
+          "z": -0.3468132942326488,
+          "radius": 1.6696000000000002,
+          "slope": 0.00002916067356883989
+        },
+        {
+          "x": -0.9996383186705758,
+          "y": -0.13302011787891388,
+          "z": -2.3052883675464324,
+          "radius": 1.6696000000000002,
+          "slope": 0.000030642896168164846
+        },
+        {
+          "x": -18.870723362658847,
+          "y": 0.01336374506354332,
+          "z": 16.91224828934506,
+          "radius": 1.6696000000000002,
+          "slope": 0.000044261546046420186
+        }
+      ],
+      "stats": {
+        "maxSlope": 0.4354681793421189,
+        "flatFraction": 0.9902381896972656,
+        "rockCount": 7717,
+        "vertexCount": 1048576,
+        "triCount": 2093058
+      },
+      "generatedAt": "2026-06-05"
+    },
+    {
+      "siteIndex": 6,
+      "siteId": "midlat_beta",
+      "surfaceSeed": 1867910675,
+      "glb": "site-6.glb",
+      "image": "site-6.jpg",
+      "params": {
+        "footprint": 57.17,
+        "resolution": 1024,
+        "detailBoost": 3.41,
+        "erosion": 0.56,
+        "mountainAmount": 0.84,
+        "mountainScale": 1.14,
+        "mountainCoverage": 0.28,
+        "foldSharpness": 0.72,
+        "craterDensity": 1.81,
+        "fissureDensity": 0.16,
+        "ridgeDensity": 0,
+        "rockDensity": 3.27
+      },
+      "landingPads": [
+        {
+          "x": -21.319995112414468,
+          "y": -0.15615959465503693,
+          "z": 17.687492668621697,
+          "radius": 2.2868,
+          "slope": 0.0000061224846777951925
+        },
+        {
+          "x": 14.054990224828936,
+          "y": 0.15208356082439423,
+          "z": 19.5316862170088,
+          "radius": 2.2868,
+          "slope": 0.000007599533765167976
+        },
+        {
+          "x": -26.796691104594334,
+          "y": -0.030771218240261078,
+          "z": 9.52833333333333,
+          "radius": 2.2868,
+          "slope": 0.000007710697652152376
+        },
+        {
+          "x": 0.47501955034213056,
+          "y": 0.11050258576869965,
+          "z": 28.585,
+          "radius": 2.2868,
+          "slope": 0.000011103830930725422
+        },
+        {
+          "x": 18.58164711632454,
+          "y": 0.47350963950157166,
+          "z": -15.89918377321603,
+          "radius": 2.2868,
+          "slope": 0.000017547223655545174
+        },
+        {
+          "x": -6.789985337243403,
+          "y": -0.04281268268823624,
+          "z": 12.266681329423267,
+          "radius": 2.2868,
+          "slope": 0.000019492189900272017
+        },
+        {
+          "x": -27.690845552297166,
+          "y": -0.10676773637533188,
+          "z": -2.263328445747802,
+          "radius": 2.2868,
+          "slope": 0.000025903199354915252
+        },
+        {
+          "x": 10.422487781036166,
+          "y": -0.18330831825733185,
+          "z": -27.690845552297166,
+          "radius": 2.2868,
+          "slope": 0.000030309373438619502
+        }
+      ],
+      "stats": {
+        "maxSlope": 0.5076809941888887,
+        "flatFraction": 0.9510593414306641,
+        "rockCount": 20804,
+        "vertexCount": 1048576,
+        "triCount": 2093058
+      },
+      "generatedAt": "2026-06-05"
+    },
+    {
+      "siteIndex": 7,
+      "siteId": "equatorial_delta",
+      "surfaceSeed": 1136505664,
+      "glb": "site-7.glb",
+      "image": "site-7.jpg",
+      "params": {
+        "footprint": 25.38,
+        "resolution": 906,
+        "detailBoost": 2.54,
+        "erosion": 0.3,
+        "mountainAmount": 0.86,
+        "mountainScale": 1.53,
+        "mountainCoverage": 0.33,
+        "foldSharpness": 0.52,
+        "craterDensity": 1.63,
+        "fissureDensity": 0.18,
+        "ridgeDensity": 0.29,
+        "rockDensity": 3.89
+      },
+      "landingPads": [
+        {
+          "x": 12.69,
+          "y": -0.022209081798791885,
+          "z": -5.033933701657458,
+          "radius": 1.0151999999999999,
+          "slope": 0.0000014545567342816312
+        },
+        {
+          "x": 4.220651933701658,
+          "y": -0.15131846070289612,
+          "z": -9.464917127071823,
+          "radius": 1.0151999999999999,
+          "slope": 0.000012314668540014395
+        },
+        {
+          "x": 0.6029502762430932,
+          "y": -0.08890661597251892,
+          "z": 1.8088508287292824,
+          "radius": 1.0151999999999999,
+          "slope": 0.000017285656403243088
+        },
+        {
+          "x": 12.69,
+          "y": -0.0328395776450634,
+          "z": -8.651635359116021,
+          "radius": 1.0151999999999999,
+          "slope": 0.000018085876201334727
+        },
+        {
+          "x": 10.278198895027623,
+          "y": 0.09359503537416458,
+          "z": -5.847215469613259,
+          "radius": 1.0151999999999999,
+          "slope": 0.00001813172554299136
+        },
+        {
+          "x": 5.8472154696132606,
+          "y": -0.18166841566562653,
+          "z": 7.866397790055248,
+          "radius": 1.0151999999999999,
+          "slope": 0.00002164751296684919
+        },
+        {
+          "x": 7.445734806629835,
+          "y": -0.0006952747935429215,
+          "z": -8.651635359116021,
+          "radius": 1.0151999999999999,
+          "slope": 0.000021768734951854718
+        },
+        {
+          "x": 4.220651933701658,
+          "y": 0.10562998801469803,
+          "z": 12.69,
+          "radius": 1.0151999999999999,
+          "slope": 0.0000234600820181452
+        }
+      ],
+      "stats": {
+        "maxSlope": 0.42457795011938126,
+        "flatFraction": 0.9605548489588663,
+        "rockCount": 3631,
+        "vertexCount": 820836,
+        "triCount": 1638050
+      },
+      "generatedAt": "2026-06-05"
+    }
+  ]
+}
